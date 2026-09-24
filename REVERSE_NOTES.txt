@@ -1,0 +1,26 @@
+Original EXE SHA-256:
+590126be244802ae77d36a038abdaad5e8083137c88bf43a62cbf38ec83757dc
+
+Confirmed imports relevant to behavior:
+CreateProcessW
+CreatePipe
+PeekNamedPipe
+WaitForSingleObject
+GetExitCodeProcess
+CreateFileW
+WriteFile
+EnumResourceTypesW
+EnumResourceNamesW
+LoadResource
+FindResourceW
+
+Resource findings:
+- Encrypted/opaque RCDATA payload: 20533 bytes
+- Resource password data decompresses to strings including:
+  e10adc3949ba59abbe56e057f20f883e
+  Password prompt
+  Please enter the correct password to continue:
+  Wrong password
+- e10adc3949ba59abbe56e057f20f883e is MD5("123456")
+
+Important: no package list has been guessed or inserted into this project.

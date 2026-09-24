@@ -1,0 +1,13 @@
+<resources>
+    <color name="tv_bg">#101722</color>
+    <color name="tv_panel">#182231</color>
+    <color name="tv_panel_border">#314158</color>
+    <color name="tv_text">#F4F7FB</color>
+    <color name="tv_text_muted">#B8C3D2</color>
+    <color name="tv_focus">#FFB300</color>
+    <color name="tv_focus_border">#FFD86A</color>
+    <color name="tv_button">#2B384B</color>
+    <color name="tv_button_border">#52647C</color>
+    <color name="tv_disabled">#303744</color>
+    <color name="tv_disabled_text">#7D8795</color>
+</resources>

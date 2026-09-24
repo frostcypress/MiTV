@@ -1,0 +1,6 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:color="@color/tv_disabled_text" />
+    <item android:state_focused="true" android:color="#1A1A1A" />
+    <item android:state_pressed="true" android:color="#1A1A1A" />
+    <item android:color="@color/tv_text" />
+</selector>

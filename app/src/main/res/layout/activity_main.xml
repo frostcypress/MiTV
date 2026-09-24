@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tv_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="72dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小米电视精简助手"
+            android:textColor="@color/tv_text"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="四项操作 · 详细内容弹窗显示 · 遥控器焦点为橙黄色"
+            android:textColor="@color/tv_text_muted"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/statusSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/tv_status_panel"
+            android:maxLines="2"
+            android:text="正在检查桌面文件…"
+            android:textColor="@color/tv_text"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/launcherCheck"
+                style="@style/TvActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:nextFocusRight="@id/adbTest"
+                android:nextFocusDown="@id/planSettings"
+                android:text="检测桌面" />
+
+            <Button
+                android:id="@+id/adbTest"
+                style="@style/TvActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:nextFocusLeft="@id/launcherCheck"
+                android:nextFocusDown="@id/optimize"
+                android:text="测试连接" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/planSettings"
+                style="@style/TvActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:nextFocusUp="@id/launcherCheck"
+                android:nextFocusRight="@id/optimize"
+                android:text="精简设置" />
+
+            <Button
+                android:id="@+id/optimize"
+                style="@style/TvActionButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:nextFocusUp="@id/adbTest"
+                android:nextFocusLeft="@id/planSettings"
+                android:text="开始精简" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,399 @@
+{
+  "profile": "captured-from-original-exe-2026-09-23",
+  "verified_source": "captured_commands.txt",
+  "verified": true,
+  "note": "这些是原EXE实际尝试调用的adb参数。捕获器返回模拟成功，因此可确认“意图执行”，不能证明每条在真实电视上都执行成功。",
+  "original_actions": [
+    {
+      "command": "connect 192.168.2.197",
+      "type": "connect"
+    },
+    {
+      "command": "install ./root/zm.apk",
+      "type": "install"
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.upgrade",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.upgrade",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.systemui",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.systemui",
+      "blocked_by_default": true,
+      "note": "关键系统界面；原工具移除后很可能导致音量OSD/系统浮层消失"
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.mitv.alarmcenter",
+      "type": "uninstall_user0",
+      "package": "com.mitv.alarmcenter",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.calendar",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.calendar",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.tv.gallery",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.tv.gallery",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.tweather",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.tweather",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.smartshare",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.smartshare",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.mitv.gallery",
+      "type": "uninstall_user0",
+      "package": "com.mitv.gallery",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.voicecontrol",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.voicecontrol",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.handbook",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.handbook",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.droidlogic",
+      "type": "uninstall_user0",
+      "package": "com.droidlogic",
+      "blocked_by_default": true,
+      "note": "底层电视平台/硬件相关组件，默认保留"
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.payment",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.payment",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.pay",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.pay",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.tv.appupgrade",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.tv.appupgrade",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.android.vpndialogs",
+      "type": "uninstall_user0",
+      "package": "com.android.vpndialogs",
+      "blocked_by_default": true,
+      "note": "Android系统VPN界面，默认保留"
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.account.auth",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.account.auth",
+      "blocked_by_default": true,
+      "note": "小米账号认证，默认保留以避免账号功能异常"
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.jiajia.yundonghui.mitv",
+      "type": "uninstall_user0",
+      "package": "com.jiajia.yundonghui.mitv",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.mipay.wallet.tv",
+      "type": "uninstall_user0",
+      "package": "com.mipay.wallet.tv",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.smarthome.tv",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.smarthome.tv",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.appstore",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.appstore",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.milink.udt",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.milink.udt",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.mi.miplay.mitvupnpsink",
+      "type": "uninstall_user0",
+      "package": "com.mi.miplay.mitvupnpsink",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.mi.umifrontend",
+      "type": "uninstall_user0",
+      "package": "com.mi.umifrontend",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.miui.tv.analytics",
+      "type": "uninstall_user0",
+      "package": "com.miui.tv.analytics",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.dlnatvservice",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.dlnatvservice",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.assistant.manual",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.assistant.manual",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.shop",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.shop",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.devicereport",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.devicereport",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mibox.lockscreen",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mibox.lockscreen",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.duokan.airkan.tvbox",
+      "type": "uninstall_user0",
+      "package": "com.duokan.airkan.tvbox",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.mi.umi",
+      "type": "uninstall_user0",
+      "package": "com.mi.umi",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.gamecenter.sdk.service.mibo",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.gamecenter.sdk.service.mibo",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.android.proxyhandler",
+      "type": "uninstall_user0",
+      "package": "com.android.proxyhandler",
+      "blocked_by_default": true,
+      "note": "Android系统代理处理组件，默认保留"
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.android.statementservice",
+      "type": "uninstall_user0",
+      "package": "com.android.statementservice",
+      "blocked_by_default": true,
+      "note": "Android系统域名/应用关联服务，默认保留"
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.advertis",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.advertis",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.screenrecorder",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.screenrecorder",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.mitv.screensaver",
+      "type": "uninstall_user0",
+      "package": "com.mitv.screensaver",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.ktcp.tvvideo",
+      "type": "uninstall_user0",
+      "package": "com.ktcp.tvvideo",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.miui.systemAdSolution",
+      "type": "uninstall_user0",
+      "package": "com.miui.systemAdSolution",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.pptv.tvsports.preinstall",
+      "type": "uninstall_user0",
+      "package": "com.pptv.tvsports.preinstall",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.duokan.videodaily",
+      "type": "uninstall_user0",
+      "package": "com.duokan.videodaily",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.pplive.atv",
+      "type": "uninstall_user0",
+      "package": "com.pplive.atv",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.xiaomi.mitv.advertise",
+      "type": "uninstall_user0",
+      "package": "com.xiaomi.mitv.advertise",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.mitv.tvhome",
+      "type": "uninstall_user0",
+      "package": "com.mitv.tvhome",
+      "blocked_by_default": true,
+      "note": "原生桌面；只有确认第三方桌面可用时才处理"
+    },
+    {
+      "command": "install -r root\\1.apk",
+      "type": "install"
+    },
+    {
+      "command": "install -r root\\2.apk",
+      "type": "install"
+    },
+    {
+      "command": "install -r root\\3.apk",
+      "type": "install"
+    },
+    {
+      "command": "install -r root\\4.apk",
+      "type": "install"
+    },
+    {
+      "command": "install -r root\\5.apk",
+      "type": "install"
+    },
+    {
+      "command": "install -r root\\6.apk",
+      "type": "install"
+    },
+    {
+      "command": "install -r root\\7.apk",
+      "type": "install"
+    },
+    {
+      "command": "install -r root\\8.apk",
+      "type": "install"
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.cibn.tv",
+      "type": "uninstall_user0",
+      "package": "com.cibn.tv",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.gitvdemo.video",
+      "type": "uninstall_user0",
+      "package": "com.gitvdemo.video",
+      "blocked_by_default": false
+    },
+    {
+      "command": "shell pm uninstall --user 0 com.ktcp.video",
+      "type": "uninstall_user0",
+      "package": "com.ktcp.video",
+      "blocked_by_default": false
+    },
+    {
+      "command": "uninstall com.cibn.tv",
+      "type": "uninstall_global",
+      "package": "com.cibn.tv"
+    },
+    {
+      "command": "uninstall com.gitvdemo.video",
+      "type": "uninstall_global",
+      "package": "com.gitvdemo.video"
+    },
+    {
+      "command": "uninstall com.ktcp.video",
+      "type": "uninstall_global",
+      "package": "com.ktcp.video"
+    },
+    {
+      "command": "install -r C:\\001\\app\\1.apk",
+      "type": "install"
+    },
+    {
+      "command": "install -r C:\\001\\app\\2.apk",
+      "type": "install"
+    },
+    {
+      "command": "install -r C:\\001\\app\\3.apk",
+      "type": "install"
+    },
+    {
+      "command": "shell am start com.dangbei.tvlauncher/.activity.SplashActivity",
+      "type": "start_activity"
+    },
+    {
+      "command": "shell am start com.ktcp.launcher/.activity.SplashActivity",
+      "type": "start_activity"
+    },
+    {
+      "command": "shell am start com.aijia.launcher/.activity.HomeActivity",
+      "type": "start_activity"
+    },
+    {
+      "command": "shell reboot",
+      "type": "reboot"
+    },
+    {
+      "command": "kill-server",
+      "type": "kill_server"
+    }
+  ],
+  "safe_policy": {
+    "default_mode": "disable_user_instead_of_uninstall_user0",
+    "blocked_packages": {
+      "com.xiaomi.mitv.systemui": "关键系统界面；原工具移除后很可能导致音量OSD/系统浮层消失",
+      "com.droidlogic": "底层电视平台/硬件相关组件，默认保留",
+      "com.android.vpndialogs": "Android系统VPN界面，默认保留",
+      "com.android.proxyhandler": "Android系统代理处理组件，默认保留",
+      "com.android.statementservice": "Android系统域名/应用关联服务，默认保留",
+      "com.xiaomi.account.auth": "小米账号认证，默认保留以避免账号功能异常",
+      "com.mitv.tvhome": "原生桌面；只有确认第三方桌面可用时才处理"
+    },
+    "do_not_bundle_optional_apks": true,
+    "do_not_touch_fastboot": true,
+    "restore_command_template": "pm enable --user 0 <package>"
+  }
+}
